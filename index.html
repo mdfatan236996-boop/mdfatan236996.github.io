@@ -1,211 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Md Fatan's digital marketing portfolio, Meta Ads strategy, social media marketing and campaign planning.">
-<title>Md Fatan | Digital Marketing Portfolio</title>
-<style>
-:root{--bg:#0b0d12;--panel:#131720;--text:#f5f5f7;--muted:#a2a8b5;--green:#b7f36b;--line:#292e39}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1080px,90%);margin:auto}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
-.logo{font-size:21px;font-weight:800;letter-spacing:-1px}
-.logo span,.accent{color:var(--green)}
-.links{display:flex;gap:24px;font-size:13px;color:var(--muted)}
-.links a:hover{color:var(--green)}
-.hero{padding:94px 0 78px;display:grid;grid-template-columns:1.4fr .8fr;gap:48px;align-items:center}
-.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}
-h1{font-size:clamp(42px,6vw,70px);line-height:1.08;letter-spacing:-3px;margin:18px 0}
-h2{font-size:clamp(27px,4vw,38px);line-height:1.2;letter-spacing:-1px;margin:10px 0 16px}
-p{color:var(--muted)}
-.hero p{max-width:570px;font-size:16px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{padding:12px 19px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--line);display:inline-block}
-.btn.primary{background:var(--green);color:#11150b;border-color:var(--green)}
-.btn:hover{transform:translateY(-2px)}
-.profile-card{border:1px solid var(--line);background:linear-gradient(145deg,#1a202b,#10131a);padding:30px;border-radius:18px}
-.avatar{width:76px;height:76px;border:1px solid #3b4932;background:#202a1b;border-radius:50%;display:grid;place-items:center;font-size:25px;color:var(--green);font-weight:800;margin-bottom:20px}
-.profile-card h3{font-size:22px}
-.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.tag{font-size:11px;padding:5px 10px;border:1px solid var(--line);border-radius:20px;color:#d0d5dd}
-section{padding:65px 0;border-top:1px solid var(--line)}
-.section-intro{max-width:650px;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
-.card .num{color:var(--green);font-size:12px;letter-spacing:2px}
-.card h3{font-size:18px;margin:12px 0 8px}
-.card p{font-size:13px}
-.project{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:stretch}
-.project-visual{border-radius:16px;padding:30px;background:linear-gradient(145deg,#252017,#11120f);border:1px solid #49402c;display:flex;flex-direction:column;justify-content:space-between;min-height:290px}
-.project-visual .brand{font-family:Georgia,serif;font-size:36px;letter-spacing:4px;color:#e4d0a5}
-.project-visual small{color:#b7a98a;letter-spacing:3px}
-.project-info{padding:8px 0}
-.project-info ul{padding-left:20px;color:var(--muted);font-size:13px;margin:16px 0}
-.project-info li{margin:8px 0}
-.notice{font-size:11px;color:#d8c89b;border:1px solid #51452c;border-radius:8px;padding:10px 12px;margin-top:15px}
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.step{border-left:2px solid var(--green);padding:4px 0 4px 17px}
-.step h3{font-size:15px;margin-bottom:4px}
-.step p{font-size:13px}
-.skill-list{display:flex;flex-wrap:wrap;gap:10px}
-.skill{background:#151a22;border:1px solid var(--line);padding:11px 15px;border-radius:9px;font-size:13px}
-.contact{background:#121720;border:1px solid var(--line);padding:32px;border-radius:16px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-footer{padding:28px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px}
-@media(max-width:720px){
- .links{gap:12px;font-size:11px}.hero,.project{grid-template-columns:1fr}
- .hero{padding:58px 0}.grid{grid-template-columns:1fr}
- .steps{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}
- h1{letter-spacing:-2px}section{padding:48px 0}
-}
-@media(max-width:400px){.links a:nth-child(2){display:none}.wrap{width:92%}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Fatan — Digital Marketing Intern portfolio, skills, and demo campaign project.">
+  <title>Md Fatan | Digital Marketing Portfolio</title>
+  <style>
+    :root{--bg:#0b0e13;--panel:#131923;--panel2:#171f2b;--text:#f3f6fb;--muted:#aab5c5;--lime:#b8f36b;--line:#293342;--blue:#8eb7ff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(11,14,19,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.5px}.brand span{color:var(--lime)}
+    .navlinks{display:flex;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--lime)}
+    .hero{padding:82px 0 68px;display:grid;grid-template-columns:1.5fr .8fr;gap:48px;align-items:center}
+    .eyebrow{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(42px,7vw,70px);line-height:1.08;letter-spacing:-2px;margin:16px 0 20px}
+    h1 span{color:var(--lime)}
+    .lead{font-size:18px;color:var(--muted);max-width:640px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid var(--line)}
+    .btn.primary{background:var(--lime);color:#10150a;border-color:var(--lime)}
+    .btn:hover{transform:translateY(-1px)}
+    .profile-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);padding:28px;border-radius:22px}
+    .avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#10150a;font-size:30px;font-weight:900;margin-bottom:20px}
+    .profile-card h2{margin:0 0 6px;font-size:23px}.muted{color:var(--muted)}
+    .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+    .pill{border:1px solid var(--line);border-radius:99px;padding:6px 10px;color:#d6deea;font-size:12px}
+    section{padding:58px 0;border-top:1px solid var(--line)}
+    .section-head{margin-bottom:28px}.section-head h2{font-size:32px;margin:4px 0 8px;letter-spacing:-.6px}
+    .section-head p{color:var(--muted);margin:0;max-width:700px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .number{color:var(--lime);font-size:13px;font-weight:800;letter-spacing:1px;margin-bottom:14px}
+    .project{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .project-visual{min-height:290px;border-radius:18px;padding:30px;background:radial-gradient(circle at 80% 15%,#435047 0,#18231f 28%,#11151b 72%);border:1px solid #334039;display:flex;flex-direction:column;justify-content:space-between}
+    .project-visual .logo{font-family:Georgia,serif;font-size:clamp(27px,4vw,42px);letter-spacing:4px}
+    .project-visual .sub{font-size:11px;letter-spacing:3px;color:#d2dfcf}
+    .project-visual .bottle{font-size:70px;align-self:center;filter:drop-shadow(0 10px 18px #0008)}
+    .notice{margin-top:18px;padding:12px 14px;border-left:3px solid var(--lime);background:#151d19;color:#dbe7d4;font-size:13px}
+    ul.clean{padding-left:19px;color:var(--muted)}ul.clean li{margin:7px 0}
+    .contactbox{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+    footer{padding:26px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:54px;gap:28px}.grid{grid-template-columns:1fr}.project{grid-template-columns:1fr}.navlinks{gap:12px;font-size:12px}.brand{font-size:14px}section{padding:44px 0}h1{letter-spacing:-1px}}
+  </style>
 </head>
 <body>
-<div class="wrap">
-<nav>
-  <a class="logo" href="#">MF<span>.</span></a>
-  <div class="links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">FATAN<span>.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
   </div>
-</nav>
-
-<header class="hero">
-  <div>
-    <div class="eyebrow">Digital Marketing Portfolio</div>
-    <h1>Smart strategy.<br><span class="accent">Meaningful</span> growth.</h1>
-    <p>Hi, I'm Md Fatan. I'm building practical skills in digital marketing, Meta Ads, audience research and campaign strategy. I turn marketing ideas into structured, measurable plans.</p>
-    <div class="actions">
-      <a class="btn primary" href="#projects">Explore My Work ↗</a>
-      <a class="btn" href="#contact">Contact Me</a>
-    </div>
-  </div>
-  <aside class="profile-card">
-    <div class="avatar">MF</div>
-    <h3>Md Fatan</h3>
-    <p>Digital Marketing Intern Candidate</p>
-    <div class="tag-row">
-      <span class="tag">Meta Ads</span>
-      <span class="tag">Social Media</span>
-      <span class="tag">Research</span>
-      <span class="tag">Tracking Practice</span>
-    </div>
-    <p style="font-size:12px;margin-top:20px">Bangladesh · Open to internship opportunities</p>
-  </aside>
 </header>
-
-<section id="about">
-  <div class="section-intro">
-    <div class="eyebrow">01 / About Me</div>
-    <h2>Learning by doing.</h2>
-    <p>I'm an aspiring digital marketer focused on understanding customers, creating useful content and planning performance-focused campaigns. I've practiced running live ads and pixel/tracking setup, and I'm continuing to develop my analytical and campaign optimization skills.</p>
-  </div>
-  <div class="grid">
-    <article class="card">
-      <div class="num">01 — RESEARCH</div>
-      <h3>Understand the audience</h3>
-      <p>Customer personas, market research, competitor analysis and audience insights.</p>
-    </article>
-    <article class="card">
-      <div class="num">02 — STRATEGY</div>
-      <h3>Plan campaigns</h3>
-      <p>Campaign objectives, creative angles, budget planning and audience testing.</p>
-    </article>
-    <article class="card">
-      <div class="num">03 — ANALYSIS</div>
-      <h3>Learn from the data</h3>
-      <p>Practice with CPA, ROAS, conversion rates and funnel performance.</p>
-    </article>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="section-intro">
-    <div class="eyebrow">02 / Skills</div>
-    <h2>My marketing toolkit.</h2>
-    <p>Skills I'm developing through practice, learning and demo projects.</p>
-  </div>
-  <div class="skill-list">
-    <span class="skill">Social Media Marketing</span>
-    <span class="skill">Meta Ads</span>
-    <span class="skill">Content Creation</span>
-    <span class="skill">Market Research</span>
-    <span class="skill">Digital Strategy</span>
-    <span class="skill">Audience Targeting</span>
-    <span class="skill">Campaign Analysis</span>
-    <span class="skill">Pixel Setup Practice</span>
-    <span class="skill">CPA & ROAS</span>
-    <span class="skill">Ads Scaling Fundamentals</span>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-intro">
-    <div class="eyebrow">03 / Selected Work</div>
-    <h2>A strategy built around a brand.</h2>
-    <p>A concept project that demonstrates my research, planning and campaign thinking.</p>
-  </div>
-  <div class="project">
-    <div class="project-visual">
-      <small>CONCEPT BRAND / 01</small>
-      <div class="brand">NOIRÉ<br>PARFUM</div>
-      <small>SCENT. IDENTITY. PRESENCE.</small>
-    </div>
-    <div class="project-info">
-      <div class="eyebrow">Demo Case Study · Luxury Fragrance</div>
-      <h2>NOIRÉ PARFUM</h2>
-      <p>A fictional luxury perfume brand created to practice digital marketing strategy for an online sales campaign in Bangladesh.</p>
-      <ul>
-        <li><strong>Market research:</strong> Explore customer concerns about authenticity, price and buying fragrance online without smelling it.</li>
-        <li><strong>Customer persona:</strong> Define a relevant audience based on interests, needs and purchasing considerations.</li>
-        <li><strong>Meta Ads plan:</strong> Develop creative concepts, audience tests and a proposed budget allocation.</li>
-        <li><strong>Measurement:</strong> Plan to assess purchases, CPA, ROAS and checkout performance.</li>
-      </ul>
-      <div class="notice">Concept project only. The ৳15,000 campaign budget is hypothetical. No real client results or sales are claimed.</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-intro">
-    <div class="eyebrow">04 / My Approach</div>
-    <h2>Plan. Test. Learn. Improve.</h2>
-    <p>My approach to building and evaluating a digital marketing campaign.</p>
-  </div>
-  <div class="steps">
-    <div class="step"><h3>01. Research the market</h3><p>Understand the audience, competition and customer problems.</p></div>
-    <div class="step"><h3>02. Define the objective</h3><p>Choose a clear campaign goal and measurable KPIs.</p></div>
-    <div class="step"><h3>03. Test creative ideas</h3><p>Develop different hooks, messages and relevant audiences.</p></div>
-    <div class="step"><h3>04. Review performance</h3><p>Evaluate results, identify funnel issues and propose next steps.</p></div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="contact">
+<main>
+  <div class="wrap hero" id="home">
     <div>
-      <div class="eyebrow">05 / Let's Connect</div>
-      <h2>Open to opportunities.</h2>
-      <p>Looking for a digital marketing internship where I can learn, contribute and grow.</p>
-      <p style="font-size:13px;margin-top:12px">Email: mdfatan236996@gmail.com</p>
+      <div class="eyebrow">Digital Marketing Portfolio</div>
+      <h1>Md Fatan<br><span>Digital Marketing Intern</span></h1>
+      <p class="lead">I’m building practical skills in social media marketing, Meta Ads, market research, content creation, and tracking setup. I enjoy turning audience insights into clear, testable campaign plans.</p>
+      <div class="actions">
+        <a class="btn primary" href="#project">View Demo Project</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
     </div>
-    <div class="actions">
-      <a class="btn primary" href="mailto:mdfatan236996@gmail.com">Email Me ↗</a>
-      <a class="btn" href="https://www.linkedin.com/in/md-fatan-669664296/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
+    <aside class="profile-card">
+      <div class="avatar" aria-label="Initials MF">MF</div>
+      <h2>Md Fatan</h2>
+      <div class="muted">Aspiring Digital Marketer · Bangladesh</div>
+      <div class="pillrow"><span class="pill">Meta Ads</span><span class="pill">Social Media</span><span class="pill">Research</span><span class="pill">Pixel Setup</span></div>
+    </aside>
   </div>
-</section>
 
-<footer>
-  <span>© 2026 Md Fatan</span>
-  <span>Digital Marketing Portfolio · Bangladesh</span>
-</footer>
-</div>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">A little about me</div><h2>Curious, practical, and ready to learn.</h2><p>I’m looking for an entry-level opportunity where I can contribute, learn from experienced marketers, and keep improving through real campaign work.</p></div>
+      <div class="grid">
+        <article class="card"><div class="number">01 / APPROACH</div><h3>Research first</h3><p>Understand the audience, their needs, objections, and competitors before planning the campaign.</p></article>
+        <article class="card"><div class="number">02 / EXECUTION</div><h3>Test with purpose</h3><p>Build clear creative and audience tests, then review results before making budget decisions.</p></article>
+        <article class="card"><div class="number">03 / MEASUREMENT</div><h3>Track what matters</h3><p>Learn to monitor campaign performance and check tracking and conversion-funnel issues.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What I’m developing</div><h2>Skills</h2><p>My current learning and practice areas.</p></div>
+      <div class="grid">
+        <article class="card"><h3>Social Media Marketing</h3><p>Content planning, page growth fundamentals, and campaign coordination.</p></article>
+        <article class="card"><h3>Meta Ads</h3><p>Campaign objectives, audience testing, creative testing, and performance review.</p></article>
+        <article class="card"><h3>Market Research</h3><p>Customer personas, buying motivations, objections, and competitor review.</p></article>
+        <article class="card"><h3>Content Creation</h3><p>Ad hooks, key messages, creative concepts, and calls to action.</p></article>
+        <article class="card"><h3>Pixel & Tracking Setup</h3><p>Practice with pixel setup and understanding event tracking concepts.</p></article>
+        <article class="card"><h3>Ads Scaling & Strategy</h3><p>Learning to assess CPA, ROAS, profitability, and when to test or scale carefully.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="project">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Selected work</div><h2>NOIRÉ PARFUM</h2><p>A portfolio concept showing how I approach research and campaign planning for a premium fragrance brand.</p></div>
+      <div class="project">
+        <div class="project-visual" aria-label="Concept artwork for NOIRÉ PARFUM">
+          <div class="sub">A STUDY IN SCENT & STORY</div>
+          <div class="bottle" aria-hidden="true">♙</div>
+          <div class="logo">NOIRÉ<br>PARFUM</div>
+          <div class="sub">DEMO BRAND CONCEPT</div>
+        </div>
+        <div class="card">
+          <div class="number">DEMO CASE STUDY</div>
+          <h3>Meta Ads campaign plan</h3>
+          <p>This fictional project explores how a luxury perfume brand could introduce its products to online shoppers in Bangladesh.</p>
+          <ul class="clean">
+            <li><strong>Objective:</strong> Online sales</li>
+            <li><strong>Audience:</strong> To be refined through customer research and testing</li>
+            <li><strong>Key objections:</strong> Authenticity, price, and buying fragrance without smelling it first</li>
+            <li><strong>Creative direction:</strong> Premium product visuals, trust-building messages, and clear offers</li>
+            <li><strong>Planning budget:</strong> ৳15,000 hypothetical budget</li>
+          </ul>
+          <div class="notice"><strong>Transparency:</strong> This is a fictional practice project. No real client relationship, campaign results, sales, or ROAS are being claimed.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contactbox">
+      <div><div class="eyebrow">Let’s connect</div><h2 style="margin:5px 0 8px">Open to internship opportunities.</h2><p class="muted" style="margin:0">For opportunities, collaboration, or feedback, feel free to contact me.</p></div>
+      <div class="actions" style="margin:0">
+        <a class="btn primary" href="mailto:mdfatan236996@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/md-fatan-669664296/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Md Fatan · Digital Marketing Portfolio</div></footer>
 </body>
 </html>
